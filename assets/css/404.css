@@ -1,0 +1,217 @@
+@import url("global.css");
+
+.line-header {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+}
+
+.container-header {
+    padding: var(--space-sm);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.line-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-base);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-xl);
+    margin-left: var(--space-xs);
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+.error-page {
+    padding: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error-page svg {
+    width: 100px;
+}
+
+.title-error {
+    text-align: center;
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
+.desc-error {
+    text-align: center;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-base);
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.line-or {
+    padding: 0 var(--space-xs);
+    width: 100%;
+}
+
+.line {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--divider);
+}
+
+.or {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) translateY(-33px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    background-color: var(--bg-main);
+}
+
+.text-or {
+    text-align: center;
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-base);
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.btn-home, .btn-extra {
+    margin-top: var(--space-sm);
+}
+
+.btn-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--text-base);
+    font-weight: var(--fw-semibold);
+    font-size: var(--fs-md);
+    width: 100%;
+    height: 50px;
+    border-radius: var(--space-lg);
+}
+
+.btn-extra {
+    color: var(--text-base);
+    font-size: var(--fs-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: var(--space-md);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+}
+
+.footer {
+    background-color: var(--bg-muted);
+    border-top: 1px solid var(--border);
+    padding: var(--space-lg) var(--space-sm);
+    font-size: var(--fs-sm);
+    color: var(--text-base);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.footer-brand {
+    max-width: 320px;
+}
+
+.footer-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-semibold);
+    color: var(--text-title);
+    margin-bottom: var(--space-sm);
+}
+
+.footer-list,
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: var(--space-xs);
+    color: var(--text-muted);
+}
+
+.footer-address address {
+    font-style: normal;
+}
+
+.footer-address p {
+    margin-bottom: var(--space-xs);
+    color: var(--text-muted);
+}
+
+.social-list li {
+    margin-bottom: var(--space-sm);
+}
+
+.social-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    text-decoration: none;
+    color: var(--text-base);
+    font-weight: var(--fw-medium);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--space-xs);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-list a:hover {
+    background-color: var(--bg-card);
+    color: var(--primary);
+}
+
+.social-list a svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.footer-bottom {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--divider);
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--text-disabled);
+    font-size: var(--fs-sm);
+}
